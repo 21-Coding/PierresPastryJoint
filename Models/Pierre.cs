@@ -5,47 +5,43 @@ namespace Pierre.Models
 
   public class Bread
   {
-    private string _name { get; set; }
-    private string _variety { get; set; }
-    private int _price { get; set; }
+    private int Price { get; set; }
 
 
 
-    public Bread(string name, string variety, int price)
+    public Bread()
     {
 
-      _name = name;
-      _variety = variety;
-      _price = price;
-
-    }
+       Price = 5;
+     }
 
 
-    public void BreadCheckout()
+    public int breadCheckout(int indivBreads)
     {
-
+      if (indivBreads >= 2 || < 2)
+      {
+        indivBreads = 5;
+      }
+      else if()
     }
 
   }
 
   public class Pastry
   {
-    private string _name { get; set; }
-    private string _type { get; set; }
-    private int _price { get; set; }
+    public int Price { get; set; }
 
 
 
 
-    public Pastry(string name, string type, int price)
+    public Pastry()
     {
-      _name = name;
-      _type = type;
-      _price = price;
 
-
+      Price = 2;
 
     }
+
+    public int
 
 
 
