@@ -8,15 +8,16 @@ namespace Pierre
   {
     public static void Main()
     {
+      Console.WriteLine("Welcome to Pierres Pastry Joint! Our bread is $5.00 & a pastry is only $2.00");
+      Console.WriteLine("We have the following breads:  ");
       Bread englishMuff = new Bread("English Muffin","Blueberry",5);
       Bread bagel = new Bread("Bagel","Onion",5);
       Bread rolls = new Bread("Roll","Honey",5);
 
       List<Bread> Bread = new List<Bread>() {englishMuff, bagel, rolls};
-      foreach(Bread style in Bread)
-      {
-        Console.WriteLine(style);
-      }
+      Bread.ForEach(Console.WriteLine);
+
+      Console.WriteLine("We have the following pastries:  ");
 
       Pastry croissant = new Pastry("Croissant","Plain",5);
       Pastry cheeseDanish = new Pastry("Danish","Cheese",5);
@@ -26,26 +27,21 @@ namespace Pierre
       Pastry.ForEach(Console.WriteLine);
 
 
-      Console.WriteLine("Welcome to Pierres Pastry Joint! Our bread is $5.00 & a pastry is only $2.00.");
 
 
-      Console.WriteLine("To select a bread enter 1.");
+      Console.WriteLine("To select a bread [enter 1]  To select a pastry [enter 2]");
       string stringBread = Console.ReadLine();
       int intBread = int.Parse(stringBread);
 
       if (stringBread == "1")
       {
-
-       Console.WriteLine(Bread);
-
-
+        Console.WriteLine(Bread[0]);
       }
-
-      Console.WriteLine("To select a pastry enter 2.");
-      string stringPastry = Console.ReadLine();
-      int intPastry = int.Parse(stringPastry);
-
-      if (stringPastry == "2")
+      else if (stringBread == "2")
+      {
+        Console.WriteLine(Pastry);
+      }
+      else
       {
 
       }
