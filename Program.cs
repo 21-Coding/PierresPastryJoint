@@ -1,12 +1,21 @@
 ﻿using System;
+using System.Collections.Generic;
+using Pierre.Models;
 
 namespace Pierre
 {
-    class Program
+    public class Program
     {
-        static void Main()
+        public static void Main()
         {
-            Console.WriteLine("Pierres Pastry Joint");
+          Bread englishMuff = new Bread("English Muffin","Blueberry",5);
+          Bread bagel = new Bread("Bagel","Onion",5);
+          Bread rolls = new Bread("Roll","Honey",5);
+
+          List<Bread> Bread = new List<Bread>() {englishMuff, bagel, rolls};
+          Console.WriteLine("Welcome to Pierres Pastry Joint!");
+
+
         }
     }
 }
