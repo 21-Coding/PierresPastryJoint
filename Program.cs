@@ -13,7 +13,7 @@ namespace Pierre
           Bread rolls = new Bread("Roll","Honey",5);
 
           List<Bread> Bread = new List<Bread>() {englishMuff, bagel, rolls};
-          Console.WriteLine("Welcome to Pierres Pastry Joint! Our bread is $5.00 & a pastry is only $2.00.");
+
 
           Pastry croissant = new Pastry("Croissant","Plain",5);
           Pastry cheeseDanish = new Pastry("Danish","Cheese",5);
@@ -27,9 +27,19 @@ namespace Pierre
           string stringBread = Console.ReadLine();
           int intBread = int.Parse(stringBread);
 
+          if (stringBread == "1")
+          {
+            Bread.ForEach(Console.WriteLine);
+          }
+
           Console.WriteLine("To select a pastry enter 2.");
           string stringPastry = Console.ReadLine();
           int intPastry = int.Parse(stringPastry);
+
+          if (stringPastry == "2")
+          {
+            Pastry.ForEach(Console.WriteLine);
+          }
 
 
 
