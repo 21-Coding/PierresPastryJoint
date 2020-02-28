@@ -6,10 +6,11 @@ namespace Pierre.Models
   public class Bread
   {
     private string _name { get; set; }
-    private int _variety { get; set; }
+    private string _variety { get; set; }
 
 
-    public Bread(string name, string type, string variety)
+
+    public Bread(string name, string variety)
     {
 
       _name = name;
@@ -18,7 +19,11 @@ namespace Pierre.Models
     }
     public static void ()
     {
-      Bread englishMuff = new Bread("English Muffin","","Blueberry")
+      Bread englishMuff = new Bread("English Muffin","Blueberry");
+      Bread bagel = new Bread("Bagel","Onion");
+      Bread rolls = new Bread("Roll","Honey");
+
+      List<Bread> Bread = new List<Bread>() {englishMuff, bagel, rolls};
 
     }
 
