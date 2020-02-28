@@ -1,12 +1,12 @@
 ﻿using System;
 
-namespace Pierres
+namespace Pierre
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("Pierres Pastry Joint");
         }
     }
 }
