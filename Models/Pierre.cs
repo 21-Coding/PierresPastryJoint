@@ -5,39 +5,52 @@ namespace Pierre.Models
 
   public class Bread
   {
-    public string Name { get; set; }
-    public string Type { get; set; }
-    public int Variety { get; set; }
+    private string _name { get; set; }
+    private int _variety { get; set; }
 
 
-    public Bread()
+    public Bread(string name, string type, string variety)
     {
 
-      Name = name;
-      Type = type;
-      Variety = variety;
+      _name = name;
+      _variety = variety;
 
     }
+    public static void ()
+    {
+      Bread englishMuff = new Bread("English Muffin","","Blueberry")
+
+    }
+
+
 
   }
 
   public class Pastry
   {
-    public string Name { get; set; }
-    public string Type { get; set; }
-    public string Variety  { get; set; }
+    private string _name { get; set; }
+    private string _type { get; set; }
+    private string _variety  { get; set; }
 
 
 
 
-    public Pastry()
+    public Pastry(string name, string type, string variety)
     {
-      Name = name;
-      Type = type;
-      Variety = variety; 
+      _name = name;
+      _type = type;
+      _variety = variety;
 
 
 
     }
+    public static void ()
+    {
+
+    }
+
+
   }
+
+
 }
