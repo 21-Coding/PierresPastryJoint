@@ -21,8 +21,10 @@ namespace Pierre.Models
     }
 
     
+    public void BreadCheckout()
+    {
 
-
+    }
 
   }
 
@@ -30,16 +32,16 @@ namespace Pierre.Models
   {
     private string _name { get; set; }
     private string _type { get; set; }
-    private string _variety { get; set; }
+    private int _price { get; set; }
 
 
 
 
-    public Pastry(string name, string type, string variety)
+    public Pastry(string name, string type, int price)
     {
       _name = name;
       _type = type;
-      _variety = variety;
+      _price = price;
 
 
 
