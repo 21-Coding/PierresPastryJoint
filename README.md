@@ -1,11 +1,11 @@
-# PierresPastryJoint
+# Pierres Pastry Joint
 
 ## By **Dominique Youmans**
 
 
 
 ### Description
-Checkout options for Pierres Bakery Joint
+Checkout options for Pierres Bakery Joint.
 
 ### Specifications
 
@@ -44,8 +44,8 @@ If you run into any issues running **PierresPastryJoint**, please contact Domini
 
 ### Technologies Used
 
- - [x] .NET
- - [x] C#
+ - [x] .NET.
+ - [x] C#.
 
 
 
