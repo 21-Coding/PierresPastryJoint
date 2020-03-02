@@ -15,7 +15,9 @@ namespace Pierre
       Console.WriteLine("$5 per loaf or buy 2, get one on us!");
       Console.WriteLine("How many loaves would you like?");
 
-      int bread breadCount = int.
+      int breadCount = int.Parse(Console.ReadLine());
+      Bread freshLoaf = new Bread(breadCount);
+      int breadAccount = freshLoaf.BreadCheckout(breadCount);
 
     }
   }
