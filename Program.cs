@@ -1,6 +1,5 @@
 using System;
-using System.Collections.Generic;
-using Pierre.Models;
+using Pierre;
 
 
   public class Program
@@ -14,13 +13,13 @@ using Pierre.Models;
       Console.WriteLine("We offer bread by the loaf & pastries as well.  Press 1 for bread & 2 for pastries");
       string userSpeak = Console.ReadLine();
 
-      if (userSpeak == 1)
+      if (userSpeak == "1")
       {
         Console.Write("Please enter the number of loaves for purchase:  ");
         string loafCount = Console.ReadLine();
         int intLoafCount = int.Parse(loafCount);
       }
-      else if (userSpeak == 2)
+      else if (userSpeak == "2")
       {
         Console.WriteLine("Please enter the number of pastries for purchase:  ");
         string pastryCount = Console.ReadLine();
@@ -35,4 +34,3 @@ using Pierre.Models;
       }
 
     }
-  }

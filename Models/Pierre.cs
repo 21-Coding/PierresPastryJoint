@@ -1,11 +1,11 @@
 using System;
 
-namespace Pierre.Models
+namespace Pierre
 {
 
-  public class Bread
+  class Bread
   {
-    private int Price { get; set; }
+    public int Price { get; set; }
 
 
 
@@ -18,16 +18,18 @@ namespace Pierre.Models
 
     public int breadCheckout(int indivBreads)
     {
-      if (indivBreads >= 2 || < 2)
+      if (indivBreads == 1)
       {
-        indivBreads = 5;
+        Price == 5;
       }
-      else if()
+      else
+      {
+        Console.WriteLine("error");
     }
-
+    return Price;
   }
 
-  public class Pastry
+  class Pastry
   {
     public int Price { get; set; }
 
@@ -41,11 +43,23 @@ namespace Pierre.Models
 
     }
 
-    public int
+    public int pastryCheckout(int indivPastries)
+    {
+      if (indivPastries == 1)
+      {
+        Price == 5;
+      }
+      else
+      {
+        Console.WriteLine("error");
+    }
+    return Price;
+    }
 
 
 
   }
 
 
+}
 }
