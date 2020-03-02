@@ -11,9 +11,11 @@ namespace Pierre.Models
       PastryTotal = 0;
     }
 
-    public int PlusOneP(int thisOne)
-    {
-      PastryTotal +=
-    }
+    // public int PlusOneP(int thisOne)
+    // {
+    //   PastryTotal += PastryCheckout(thisOne);
+    //   return PastryTotal;
+    // }
+
   }
 }

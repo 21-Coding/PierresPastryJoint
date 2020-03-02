@@ -12,7 +12,13 @@ namespace Pierre.Models
     }
     public int PlusOneB(int thisOne)
     {
-      BreadTotal +=
+      BreadTotal += BreadCheckout(thisOne);
+      return BreadTotal;
+    }
+    public int BreadCheckout(int loaves)
+    {
+      BreadTotal = (5 * loaves);
+      return BreadTotal;
     }
   }
 }
