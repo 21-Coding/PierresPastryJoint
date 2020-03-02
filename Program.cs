@@ -1,36 +1,22 @@
 using System;
-using Pierre;
+using Pierre.Models;
 
-
+namespace Pierre
+{
   public class Program
   {
     public static void Main()
     {
-      Bread freshBread = new Bread();
-      Pastry freshPastry = new Pastry();
+      Console.WriteLine("Thank You for shopping at Pierre's Pastry Joint");
+      Console.Write("Please provide a name for the order: ");
+      string orderName = Console.ReadLine();
+      Console.WriteLine("We provide a small but organic & homeade menu:  ");
+      Console.WriteLine("Blueberry Hard Dough Bread.");
+      Console.WriteLine("$5 per loaf or buy 2, get one on us!");
+      Console.WriteLine("How many loaves would you like?");
 
-      Console.WriteLine("Pierres Pasty Joint");
-      Console.WriteLine("We offer bread by the loaf & pastries as well.  Press 1 for bread & 2 for pastries");
-      string userSpeak = Console.ReadLine();
-
-      if (userSpeak == "1")
-      {
-        Console.Write("Please enter the number of loaves for purchase:  ");
-        string loafCount = Console.ReadLine();
-        int intLoafCount = int.Parse(loafCount);
-      }
-      else if (userSpeak == "2")
-      {
-        Console.WriteLine("Please enter the number of pastries for purchase:  ");
-        string pastryCount = Console.ReadLine();
-        int intPastryCount = int.Parse(pastryCount);
-      }
-      else
-      {
-        Console.WriteLine("Please enter 1 or 2.");
-        Main();
-      }
-
-      }
+      int bread breadCount = int.
 
     }
+  }
+}
