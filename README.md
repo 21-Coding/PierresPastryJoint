@@ -36,7 +36,7 @@ Checkout options for Pierres Pastry Joint.
 
 ### Known Bugs
 
-Total price is needs refactoring.
+Total price needs refactoring.
 
 ### Support and contact details
 
