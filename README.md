@@ -5,7 +5,7 @@
 ![Alt Text](https://media.giphy.com/media/l4Jz3a8jO92crUlWM/giphy.gif)
 
 ### Description
-Checkout options for Pierres Bakery Joint.
+Checkout options for Pierres Pastry Joint.
 
 ### Specifications
 
