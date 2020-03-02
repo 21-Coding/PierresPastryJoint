@@ -10,5 +10,9 @@ namespace Pierre.Models
       BreadCount = loaves;
       BreadTotal = 0;
     }
+    public int PlusOneB(int thisOne)
+    {
+      BreadTotal +=
+    }
   }
 }

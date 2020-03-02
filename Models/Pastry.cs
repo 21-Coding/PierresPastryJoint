@@ -10,5 +10,10 @@ namespace Pierre.Models
       PastryCount = pastries;
       PastryTotal = 0;
     }
+
+    public int PlusOneP(int thisOne)
+    {
+      PastryTotal +=
+    }
   }
 }
