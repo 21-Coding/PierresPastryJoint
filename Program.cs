@@ -18,6 +18,7 @@ namespace Pierre
       int breadCount = int.Parse(Console.ReadLine());
       Bread freshLoaf = new Bread(breadCount);
       int breadAccount = freshLoaf.BreadCheckout(breadCount);
+      Console.WriteLine(breadAccount);
 
     }
   }
