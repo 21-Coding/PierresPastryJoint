@@ -12,10 +12,10 @@
         BreadTotal = 0;
       }
 
-      public int BreadCheckout(int loaves)
+      public void BreadCheckout()
       {
-        BreadCount = ((5 * (loaves % 3)) + (loaves / 3 * 10));
-        return BreadTotal;
+        BreadTotal = ((5 * (BreadCount % 3)) + (BreadCount / 3 * 10));
+
       }
 
     }

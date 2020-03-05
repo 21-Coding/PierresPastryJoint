@@ -11,10 +11,10 @@
         PastryTotal = 0;
       }
 
-      public int PastryCheckout(int pastries)
+      public void PastryCheckout()
       {
-        PastryTotal = ((pastries / 3) * 5) + (2 * (pastries % 3));
-        return PastryTotal;
+        PastryTotal = ((PastryCount / 3) * 5) + (2 * (PastryCount % 3));
+
       }
     }
   }

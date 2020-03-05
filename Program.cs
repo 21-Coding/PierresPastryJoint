@@ -35,7 +35,7 @@
 
         int breadCount = int.Parse(Console.ReadLine());
         Bread freshLoaf = new Bread(breadCount);
-        int breadAccount = freshLoaf.BreadCheckout(breadCount);
+        freshLoaf.BreadCheckout();
         Console.Clear();
 
         Console.ForegroundColor = ConsoleColor.White;
@@ -49,7 +49,7 @@
 
         int pastryCount = int.Parse(Console.ReadLine());
         Pastry freshOne = new Pastry(pastryCount);
-        int pastryAccount = freshOne.PastryCheckout(pastryCount);
+        freshOne.PastryCheckout();
 
         Console.Clear();
         Console.ForegroundColor = ConsoleColor.Cyan;
